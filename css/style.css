@@ -1,0 +1,255 @@
+/* CSS RESET */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gelasio', serif;
+    /* font-family: 'Shadows Into Light', cursive;
+font-family: 'Source Serif Pro', serif; */
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* making variable */
+:root {
+    --navbar_height: 59px;
+}
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: " ";
+    background-color: rgb(104, 103, 103);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    /* margin: 10px; */
+}
+
+/* navigation bar:logo and image */
+#logo {
+    margin: 8px 17px;
+}
+
+#logo img {
+
+    height: 80px;
+    margin: 10px 12px;
+}
+
+/* navigation bar:list styling */
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar ul li {
+    display: flex;
+    /* color: white; */
+    list-style: none;
+    font: size 1.8rem;
+    /* text-align: center;
+    justify-content: center; */
+
+}
+
+#navbar ul li a {
+    color: rgb(253, 245, 245);
+    display: block;
+    padding: 9px 22px;
+    text-decoration: none;
+    border-radius: 20px;
+
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* home section styling */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 120px;
+    height: 500px;
+    /*500 px*/
+}
+
+/*image ka time bahar ata time  ../ ka use kia jata hai*/
+#home::before {
+    content: " ";
+    background: url("../background4new.jpg") no-repeat center center/cover;
+    /*no-repeat centre centre/cover this line is used for not repeating pf background image*/
+    position: absolute;
+    height:640px;/*86%*/
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 10.89;
+}
+
+#home h1 {
+    color: white;
+    text-align: centre;
+}
+
+#home p {
+    color: white;
+    /* text-align: centre; */
+    font-size: 1rem;
+}
+
+.heading {
+    padding: 12px;
+    font-size: 3rem;
+}
+
+.btn {
+    padding: 6px 12px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: rgb(249, 12, 12);
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* #login{
+    padding: 9px 22px;
+} */
+.mid {
+    text-align: center;
+}
+
+.h_primary {
+    color: rgb(7, 7, 7);
+    margin: 10px;
+    font-size: 2rem;
+}
+
+.h_secondary {
+    font-size: 1.5rem;
+    padding: 12x;
+    color: red;
+}
+
+#services {
+    margin: 54px;
+    display: flex;
+    /* height: 250px; */
+    /* position: relative; */
+}
+
+#services .box {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    border: 2px solid red;
+    padding: 36px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: rgb(216, 203, 203);
+    /* height: 200px;//by me */
+}
+.service_container{
+    position: relative;
+}
+.service_container::before{
+    content: "";
+    position: absolute;
+    background: url("../sevices.jpg");
+    width: 100%;
+    height: 503px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#services .box img {
+    height: 180px;
+    /*controlling image height*/
+    display: block;
+    margin: auto;
+    /* by me */
+}
+
+/* client section */
+#client-section{
+    position: relative;
+    height: 344px;
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin: 36px;
+    
+}
+#clients img{
+    
+    height: 140px;
+
+}
+.client_item{
+    padding: 34px;
+}
+#client-section::before{
+content: "";
+position: absolute;
+background: url("../background_img1.jpg");
+width: 100%;
+height: 344px;
+z-index: -1;
+opacity: 0.4;
+}
+/* contact us */
+#contact{
+    position: relative;
+}
+#contact::before{
+    /* background image ka lia position absolute kerna hoga */
+    content: "";
+    position: absolute;
+    background: url("../dilivery\ food.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    }
+    #contact_box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 34px;
+        padding-top: 34px;
+    }
+    #contact_box input,#contact_box textarea{
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1.1rem;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+    #contact_box label{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    footer{
+        background: black;
+        color: white;
+        padding: 9px 20px;
+    }
